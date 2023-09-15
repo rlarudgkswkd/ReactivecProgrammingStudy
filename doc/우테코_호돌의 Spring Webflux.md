@@ -31,7 +31,8 @@ Spring 5.X 특징?
 
 ---
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/02c5fda5-9a5a-4321-822d-e950fd321728/1c14cbe8-2fa0-447e-8905-1a9bfab1734f/Untitled.png)
+![image](https://github.com/rlarudgkswkd/ReactivecProgrammingStudy/assets/48428850/fff516c0-127a-40d0-b7c8-e298926e5d86)
+
 
 - 클라이언트가 요청이 오면 스레드 풀에서 스레드를 반환해주는데 그때 모든 스레드가 사용중이면 Queue에 쌓임. 그래서 CPU, Memory는 충분하지만 쓰레드가 모자라서 처리가 느려지는 일 있음.
 - 그렇다고 단순히 스레드를 늘린다고 해결되는 문제가 아님
@@ -42,7 +43,8 @@ Spring 5.X 특징?
 
 ## 넷플릭스법
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/02c5fda5-9a5a-4321-822d-e950fd321728/dd0ebee4-1e73-459b-8ac6-4a3654293b97/Untitled.png)
+![image](https://github.com/rlarudgkswkd/ReactivecProgrammingStudy/assets/48428850/13007a38-0703-4f85-a251-8cbc768f7da9)
+
 
 ## 트래픽이 대폭 증가하는 현대 소프트웨어 환경
 
@@ -144,7 +146,8 @@ Spring 5.X 특징?
 
 ## Function Endpoints: RouterFunction
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/02c5fda5-9a5a-4321-822d-e950fd321728/9c9212c4-4707-40c1-973e-47e9c3fac8a1/Untitled.png)
+![image](https://github.com/rlarudgkswkd/ReactivecProgrammingStudy/assets/48428850/29b146f2-9343-4183-a80b-bade17d49412)
+
 
 ## Functional Endpoints: nest() 으로 경로 nesting 하기
 
@@ -159,7 +162,8 @@ Spring 5.X 특징?
 - web clients ↔ reactive clients
 - Netty
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/02c5fda5-9a5a-4321-822d-e950fd321728/47be144a-1e0c-418c-ad45-05525ca8aecd/Untitled.png)
+![image](https://github.com/rlarudgkswkd/ReactivecProgrammingStudy/assets/48428850/e922ed80-f5c4-425e-ac83-d6e9e8dcae06)
+
 
 - 쓰려면 end to end모든것을 그거로 써야한다. 어느거는 Reactive로 쓰고 이런것 좋지 않음.
 - R2DBC

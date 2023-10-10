@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/project/TodoListWithWebFlux/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringWebMvc/pom.xml" />
+        <option value="$PROJECT_DIR$/project/SpringWebMvc/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,14 @@
+spring:
+  jdbc:
+    url: jdbc:mariadb://43.202.27.39:3306/WEBMVC_TEST
+    username: 'root'
+    password: "!!okestro2022"
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    # 교보생명
+    url: jdbc:mariadb://43.202.27.39:3306/WEBMVC_TEST
+    username: root
+    password: "!!okestro2022"
+    jdbc-url: jdbc:mariadb://43.202.27.39:3306/WEBMVC_TEST
+server:
+  port: 8090

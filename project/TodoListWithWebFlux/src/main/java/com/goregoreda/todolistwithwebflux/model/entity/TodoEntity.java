@@ -5,6 +5,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
 @Table(name = "todos")
+@Data
 public class TodoEntity {
     @Id
     private Long id;

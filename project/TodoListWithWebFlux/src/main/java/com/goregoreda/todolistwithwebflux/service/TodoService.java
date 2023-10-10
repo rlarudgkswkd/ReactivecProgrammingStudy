@@ -9,5 +9,9 @@ public interface TodoService {
 
     Flux<TodoEntity> getAllTodos();
 
-    Mono<TodoEntity> getTodoById(String id);
+    Mono<TodoEntity> getTodoById(long id);
+
+    Mono<TodoEntity> updateTodoById(long id, TodoEntity updatedTodo);
+
+    Mono<Void> deleteTodoById(long id);
 }

@@ -17,19 +17,32 @@ public class TodoServiceImpl implements TodoService {
     @Override
     public Mono<TodoEntity> createTodo(TodoEntity todo) {
         // 비즈니스 로직 구현
-        return null;
+        return todoRepository.save(todo);
     }
 
     @Override
     public Flux<TodoEntity> getAllTodos() {
-        // 비즈니스 로직 구현
-        return null;
+        return todoRepository.findAll();
     }
 
     @Override
-    public Mono<TodoEntity> getTodoById(String id) {
-        // 비즈니스 로직 구현
-        return null;
+    public Mono<TodoEntity> getTodoById(long id) {
+        return todoRepository.findById(id);
+    }
+
+    @Override
+    public Mono<TodoEntity> updateTodoById(long id, TodoEntity updatedTodo) {
+        return todoRepository.findById(id)
+                .flatMap(existingTodo -> {
+                    // 업데이트를 위해 기존 Todo 엔터티를 업데이트합니다.
+                    existingTodo.setTitle(updatedTodo.getTitle());
+                    return todoRepository.save(existingTodo);
+                });
+    }
+
+    @Override
+    public Mono<Void> deleteTodoById(long id) {
+        return todoRepository.deleteById(id);
     }
 
 }

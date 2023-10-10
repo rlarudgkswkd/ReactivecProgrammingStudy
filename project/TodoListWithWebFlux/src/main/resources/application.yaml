@@ -1,0 +1,6 @@
+spring:
+  r2dbc:
+    url: r2dbc:mariadb://43.202.27.39:3306/WEBFLUX_TEST
+    username: 'root'
+    password: "!!okestro2022"
+

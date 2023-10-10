@@ -18,6 +18,16 @@ public class TodoServiceImpl implements TodoService {
     @Override
     public CompletableFuture<TodoEntity> createTodo(TodoEntity todo) {
         // 비즈니스 로직 구현
+        if (todoRepository.existsById(todo.getId())) {
+            //TODO 에러 처리 필요
+        } else {
+            //ProviderId Sequence +1 하는 부분
+            if (todoRepository.count() != 0) {
+                todo.setId(todoRepository.getMaxId() + 1);
+            } else {
+                todo.setId(1L);
+            }
+        }
         return CompletableFuture.completedFuture(todoRepository.save(todo));
     }
 

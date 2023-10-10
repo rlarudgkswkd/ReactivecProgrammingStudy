@@ -10,5 +10,21 @@ spring:
     username: root
     password: "!!okestro2022"
     jdbc-url: jdbc:mariadb://43.202.27.39:3306/WEBMVC_TEST
+
+  # JPA Properties
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: false
+    generate-ddl: false
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
 server:
   port: 8090
+
+

@@ -1,6 +1,6 @@
 package com.goregoreda.todolistwithwebflux.service.impl;
 
-import com.goregoreda.todolistwithwebflux.model.Todo;
+import com.goregoreda.todolistwithwebflux.model.entity.TodoEntity;
 import com.goregoreda.todolistwithwebflux.repository.TodoRepository;
 import com.goregoreda.todolistwithwebflux.service.TodoService;
 import lombok.RequiredArgsConstructor;
@@ -15,19 +15,19 @@ public class TodoServiceImpl implements TodoService {
     private final TodoRepository todoRepository;
 
     @Override
-    public Mono<Todo> createTodo(Todo todo) {
+    public Mono<TodoEntity> createTodo(TodoEntity todo) {
         // 비즈니스 로직 구현
         return null;
     }
 
     @Override
-    public Flux<Todo> getAllTodos() {
+    public Flux<TodoEntity> getAllTodos() {
         // 비즈니스 로직 구현
         return null;
     }
 
     @Override
-    public Mono<Todo> getTodoById(String id) {
+    public Mono<TodoEntity> getTodoById(String id) {
         // 비즈니스 로직 구현
         return null;
     }

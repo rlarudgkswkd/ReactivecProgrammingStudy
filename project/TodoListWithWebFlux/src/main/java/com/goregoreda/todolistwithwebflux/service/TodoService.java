@@ -1,13 +1,13 @@
 package com.goregoreda.todolistwithwebflux.service;
 
-import com.goregoreda.todolistwithwebflux.model.Todo;
+import com.goregoreda.todolistwithwebflux.model.entity.TodoEntity;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface TodoService {
-    Mono<Todo> createTodo(Todo todo);
+    Mono<TodoEntity> createTodo(TodoEntity todo);
 
-    Flux<Todo> getAllTodos();
+    Flux<TodoEntity> getAllTodos();
 
-    Mono<Todo> getTodoById(String id);
+    Mono<TodoEntity> getTodoById(String id);
 }

@@ -9,16 +9,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="TodoListWithWebFlux" />
         <module name="SpringWebMvc" />
+        <module name="SpringWebMvcByBaeldung" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SpringWebMvc" target="11" />
+      <module name="SpringWebMvcByBaeldung" target="11" />
       <module name="TodoListWithWebFlux" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringWebMvc" options="-parameters" />
+      <module name="SpringWebMvcByBaeldung" options="-parameters" />
       <module name="TodoListWithWebFlux" options="-parameters" />
     </option>
   </component>

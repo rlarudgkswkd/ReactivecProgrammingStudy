@@ -1,5 +1,6 @@
 package com.goregoreda.todolistwithwebflux.controller;
 
+import com.goregoreda.todolistwithwebflux.model.dto.TodoDto;
 import com.goregoreda.todolistwithwebflux.model.entity.TodoEntity;
 import com.goregoreda.todolistwithwebflux.service.TodoService;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +15,7 @@ public class TodoController {
     private final TodoService todoService;
 
     @GetMapping
-    public Flux<TodoEntity> getAllTodos() {
+    public Flux<TodoDto> getAllTodos() {
         return todoService.getAllTodos();
     }
 

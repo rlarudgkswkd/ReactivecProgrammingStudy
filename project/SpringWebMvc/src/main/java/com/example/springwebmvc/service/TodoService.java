@@ -1,6 +1,7 @@
 package com.example.springwebmvc.service;
 
 
+import com.example.springwebmvc.model.dto.TodoDto;
 import com.example.springwebmvc.model.entity.TodoEntity;
 
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.concurrent.CompletableFuture;
 public interface TodoService {
     CompletableFuture<TodoEntity> createTodo(TodoEntity todo);
 
-    CompletableFuture<List<TodoEntity>> getAllTodos();
+    CompletableFuture<List<TodoDto>> getAllTodos();
 
     CompletableFuture<TodoEntity> getTodoById(long id);
 

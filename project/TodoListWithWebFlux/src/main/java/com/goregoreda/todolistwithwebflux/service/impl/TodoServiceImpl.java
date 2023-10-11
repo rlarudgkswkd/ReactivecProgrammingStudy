@@ -1,6 +1,5 @@
 package com.goregoreda.todolistwithwebflux.service.impl;
 
-import com.goregoreda.todolistwithwebflux.model.dto.TodoDto;
 import com.goregoreda.todolistwithwebflux.model.entity.TodoEntity;
 import com.goregoreda.todolistwithwebflux.repository.TodoRepository;
 import com.goregoreda.todolistwithwebflux.service.TodoService;
@@ -8,9 +7,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -25,16 +21,8 @@ public class TodoServiceImpl implements TodoService {
     }
 
     @Override
-    public Flux<TodoDto> getAllTodos() {
-        List<TodoDto> todos = new ArrayList<>();
-        for (long i = 1; i <= 15; i++) {
-            TodoDto todo = new TodoDto();
-            todo.setId(i);
-            todo.setTitle("할 일 제목");
-            todo.setCompleted(false);
-            todos.add(todo);
-        }
-        return Flux.fromIterable(todos);
+    public Flux<TodoEntity> getAllTodos() {
+        return todoRepository.findAll();
     }
 
     @Override

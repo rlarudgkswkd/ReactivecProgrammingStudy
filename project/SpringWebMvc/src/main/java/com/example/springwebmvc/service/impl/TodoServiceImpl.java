@@ -1,11 +1,13 @@
 package com.example.springwebmvc.service.impl;
 
+import com.example.springwebmvc.model.dto.TodoDto;
 import com.example.springwebmvc.model.entity.TodoEntity;
 import com.example.springwebmvc.repository.TodoRepository;
 import com.example.springwebmvc.service.TodoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -32,8 +34,16 @@ public class TodoServiceImpl implements TodoService {
     }
 
     @Override
-    public CompletableFuture<List<TodoEntity>> getAllTodos() {
-        return CompletableFuture.completedFuture(todoRepository.findAll());
+    public CompletableFuture<List<TodoDto>> getAllTodos() {
+        List<TodoDto> todos = new ArrayList<>();
+        for (long i = 1; i <= 15; i++) {
+            TodoDto todo = new TodoDto();
+            todo.setId(i);
+            todo.setTitle("할 일 제목");
+            todo.setCompleted(false);
+            todos.add(todo);
+        }
+        return CompletableFuture.completedFuture(todos);
     }
 
     @Override

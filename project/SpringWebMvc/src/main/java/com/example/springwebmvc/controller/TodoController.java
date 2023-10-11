@@ -1,5 +1,6 @@
 package com.example.springwebmvc.controller;
 
+import com.example.springwebmvc.model.dto.TodoDto;
 import com.example.springwebmvc.model.entity.TodoEntity;
 import com.example.springwebmvc.service.TodoService;
 import lombok.RequiredArgsConstructor;
@@ -15,7 +16,7 @@ public class TodoController {
     private final TodoService todoService;
 
     @GetMapping
-    public CompletableFuture<List<TodoEntity>> getAllTodos() {
+    public CompletableFuture<List<TodoDto>> getAllTodos() {
         return todoService.getAllTodos();
     }
 

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/project/SpringWebFluxByBaeldung/SpringWebFluxByBaeldung.iml" filepath="$PROJECT_DIR$/project/SpringWebFluxByBaeldung/SpringWebFluxByBaeldung.iml" />
       <module fileurl="file://$PROJECT_DIR$/project/SpringWebMvc/SpringWebMvc.iml" filepath="$PROJECT_DIR$/project/SpringWebMvc/SpringWebMvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/project/SpringWebMvcByBaeldung/SpringWebMvcByBaeldung.iml" filepath="$PROJECT_DIR$/project/SpringWebMvcByBaeldung/SpringWebMvcByBaeldung.iml" />
       <module fileurl="file://$PROJECT_DIR$/project/TodoListWithWebFlux/TodoListWithWebFlux.iml" filepath="$PROJECT_DIR$/project/TodoListWithWebFlux/TodoListWithWebFlux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project/demo/demo.iml" filepath="$PROJECT_DIR$/project/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/reactiveProgramming.iml" filepath="$PROJECT_DIR$/.idea/reactiveProgramming.iml" />
     </modules>
   </component>

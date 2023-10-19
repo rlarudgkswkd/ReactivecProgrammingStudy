@@ -33,6 +33,12 @@
       <artifactId>reactor-test</artifactId>
       <scope>test</scope>
     </dependency>
+    <!-- lombok 라이브러리 -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.26</version>
+    </dependency>
   </dependencies>
 
   <build>

@@ -1,15 +1,15 @@
 package com.example.reactorstudy.util;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+@Slf4j
 public class MyLogger {
-  private static final Logger logger = LogManager.getLogger(MyLogger.class);
-
-  public static void main(String[] args) {
-    logger.error("This is an error message.");
-    logger.warn("This is a warning message.");
-    logger.info("This is an information message.");
-    logger.debug("This is a debug message.");
+  public void myMethod() {
+    log.error("This is an error message.");
+    log.warn("This is a warning message.");
+    log.info("This is an information message.");
+    log.debug("This is a debug message.");
   }
 }

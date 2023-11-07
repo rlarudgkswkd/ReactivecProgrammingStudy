@@ -11,6 +11,7 @@ public class FlatMapExmpl {
         .flatMap(feeling -> Flux
             .just("Morning", "Afternoon", "Evening")
             .map(time -> feeling + " " + time))
+
         .subscribe(log::info);
   }
 }
